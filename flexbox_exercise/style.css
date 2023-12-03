@@ -1,0 +1,81 @@
+:root{
+    --link-color:#2b2b2b;
+    --hover-color:#2b2bb2;
+}
+
+body{
+    background-color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+div.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 200px;
+    height: 100vh;
+    background-image: linear-gradient(to right, rgb(143, 145, 143), rgb(231, 231, 231));
+
+}
+
+div.sidebar .logo{
+    width: 200px;
+    height: 200px;
+    border-bottom: black 1px solid;
+
+}
+
+div.sidebar nav.links{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    width: 200px;
+
+
+}
+
+div.sidebar nav.links a{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.4rem;
+    color: var(--link-color);
+    text-decoration: none;
+    border-bottom: solid 1px black;
+    padding: 2rem 0 2rem 0;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    transition: 0.3s;
+}
+
+div.sidebar nav.links a:hover{
+    color: var(--hover-color);
+    background-color: #ffffffbb;
+    font-size: 1.6rem;
+}
+
+
+div.sidebar div.user-data{
+    display: flex;
+    position: absolute; 
+    bottom: 0;
+    width: 200px;
+    height: 50px;
+    border-top: 1px solid black;
+    background-color: #3333331a;
+
+}
+
+div.sidebar div.user-data img.user-picture{
+    height: 50px;
+    width: 50px;
+    border-right:solid black 1px;
+}
+
+div.sidebar div.user-data .username{
+    color: #222;
+    text-align: center;
+    margin: auto;
+    font-size: 1.4rem;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+}
