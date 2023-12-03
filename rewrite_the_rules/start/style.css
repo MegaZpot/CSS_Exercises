@@ -1,0 +1,17 @@
+:root{
+--darkgreen:#011212;
+--standardimension:100px ;
+--regularorange:#ff8800;
+--bradius: 50px;
+}
+
+body {
+    background-color: var(--darkgreen);
+}
+
+.ball {
+    width: var(--standardimension);
+    height: var(--standardimension);
+    background-color: var(--regularorange);
+    border-radius: var(--bradius);
+}
