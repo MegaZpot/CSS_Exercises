@@ -1,0 +1,136 @@
+:root{
+    --green-color:#baffc9;
+    --yellow-color:#ffffba;
+    --orange-color:#ffdfba;
+    --red-color:#ffb3ba;
+    --blue-color:#bae1ff;
+}
+
+
+body{
+    display: flex;
+    justify-content: space-between;
+    height: 1000px;
+    padding: 0;
+    margin: 0;
+    
+}
+
+#yellow{
+
+    flex-direction: column;
+    order:1;
+    min-width: 9rem;
+    height: inherit;
+    background-color: var(--yellow-color);
+    display: flex;
+
+}
+
+#yellow p{
+    align-self: center;
+    margin-top: 3rem ;
+    margin-bottom: 0.5rem;
+}
+
+#yellow ul{
+    width: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: inherit;
+    max-height: 300px;
+
+}
+
+#yellow ul li{
+    align-self: center;
+    padding: 1em 1em 1em 1em;
+    background-color: white;
+
+}
+
+#red{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    order:2;
+    min-width: 9rem;
+    height: inherit;
+    background-color:var(--red-color) ;
+
+}
+
+#red ul{
+    width: unset;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: inherit;
+    max-height: 300px;
+
+}
+
+#red p{
+    align-self: center;
+    margin-top: 3rem ;
+    padding: 0 3em 0 0;
+    margin-bottom: 0.5rem;
+}
+
+#red ul li{
+    align-self: center;
+    padding: 1em 1em 1em 1em;
+    background-color: white;
+}
+
+
+#green {
+    display: flex;
+    justify-content: center;
+    order:3;
+    height: inherit;
+    background-color: var(--green-color);
+    min-width: 8rem;
+}
+
+#green p{
+    margin-top: 3rem ;
+}
+
+
+#orange{
+    display: flex;
+    order:4;
+    height: inherit;
+    background-color: var(--orange-color);
+    min-width: 20rem;
+
+}
+
+#orange p{
+    margin-top: 3rem ;
+    margin-left: 3rem;
+}
+
+
+
+#blue{
+    display: flex;
+    justify-content: center;
+    order:5;
+    height: inherit;
+    background-color: var(--blue-color);
+    min-width: 7rem;
+}
+
+#blue p{
+    margin-top: 3rem ;
+
+}
