@@ -1,0 +1,109 @@
+
+
+body{
+    margin: 0;
+    padding: 0;
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    gap: 3rem;
+    grid-template-columns: repeat(3,3fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas:
+    "greenbox greenbox greenbox"
+    "yellowbox redbox bluebox"
+    "yellowbox redbox bluebox"
+    "orangebox orangebox bluebox";    
+}
+
+
+section#green{
+    grid-area: greenbox;
+    background: #baffc9;
+    
+}
+
+section#green p,
+section#yellow p,
+section#red p,
+section#blue p,
+section#orange p{
+margin: 0;
+padding: 0;
+padding-top: 3em;
+padding-left: 4em;
+}
+
+section#yellow{
+    grid-area: yellowbox;
+    background: #ffffba;
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+}
+
+section#yellow ul{
+    align-self: center;
+    height: 250px;
+    width: 350px;
+    list-style: none;
+    display: grid;
+    gap: 4rem;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
+    grid-row: span 2;
+    margin: auto;
+    padding: 0;
+}
+
+section#yellow ul li{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: white;
+    padding-left: 2em;
+
+}
+
+
+section#orange{
+    grid-area: orangebox;
+    background: #ffdfba;
+}
+
+section#red{
+    grid-area: redbox;
+    background: #ffb3ba;
+    display: grid;
+    grid-template-rows: repeat(4,1fr);
+}
+
+section#red ul{
+    align-self: center;
+    height: 250px;
+    width: 350px;
+    list-style: none;
+    display: grid;
+    gap: 4rem;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
+    grid-row: span 2;
+    margin: auto;
+    padding: 0;
+}
+
+section#red ul li{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    background-color: white;
+    padding-left: 2em;
+
+}
+
+
+section#blue{
+    grid-area: bluebox;
+    background: #bae1ff;
+}
+
+
