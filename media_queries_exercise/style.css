@@ -1,0 +1,57 @@
+div.vitrina{
+    display: grid;
+    padding-top: 140px;
+    grid-template-columns: auto;
+    grid-template-rows: 1fr;
+    gap: 30px;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-areas:         
+        " img1 img2 img3 "
+        ;
+    
+}
+
+ 
+
+.img1,
+.img2,
+.img3 {
+    width: 170px;
+    height: 270px;
+    background-color: aqua;
+}
+
+.img1{
+    grid-area: img1;
+}
+
+.img2{
+    grid-area: img2;
+}
+
+.img3{
+    grid-area:img3;
+}
+
+@media(max-width:768px) {
+    div.vitrina{       
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr;        
+        grid-template-areas:
+            "img1 img2" 
+            "img3 . ";
+    }
+}
+
+@media(max-width:375px) {
+   div.vitrina{       
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr 1fr;        
+        grid-template-areas:
+            "img1" 
+            "img2"
+            "img3";
+    }
+}
