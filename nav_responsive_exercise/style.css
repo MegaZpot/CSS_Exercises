@@ -1,0 +1,181 @@
+body{
+    background:lightslategray ;
+    margin: 0;
+    padding:0;
+}
+.hamburguer-logo{
+    display: none;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: visible;
+    width: 100%;    
+    border-bottom: 1px solid white;
+    position: relative;
+
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: inherit;
+    padding: 1.2rem 0 1.2rem 0;
+    margin: 0;
+    list-style: none;
+    background: #212529;
+
+}
+
+ul li {
+    list-style-type: none;
+
+}
+
+.navbar{
+    font-size: 2rem;
+    font-weight: 300;
+    padding-right: 2.5rem;
+    padding-left: 1em;
+    color: white;
+
+}
+
+.home{
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding-right: 1.7rem;
+    color: white;
+    text-decoration: none;
+
+}
+
+.link{
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding-right: 1.7rem;
+    color: #939698;
+    text-decoration: none;
+}
+.dropdown-container{
+    min-height: 100%;
+    min-width: 9.5rem;
+
+}
+
+.dropdown-title{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #939698;
+
+}
+
+
+
+
+ul li a:hover {
+
+    color: rgb(205, 251, 0);
+    background: none;
+
+}
+
+.dropdown{
+    justify-content: center;
+    background-color: #212529;
+    min-width: 8rem;
+    background: transparent;
+    display: none;
+    position: absolute;
+    z-index: 2;
+    left: 21.2rem  ;
+    cursor: pointer;
+}
+
+ul li:hover ul.dropdown {
+    display: block;
+    padding: 0;
+    background-color: #212529;
+    text-align: center;
+    color: rgb(205, 251, 0);
+
+}
+
+ul li ul.dropdown li{
+    display: block;
+    margin: 1rem 0 1rem 0;
+    color:#939698 ;
+    background: #212529;
+    font-size: 1.4rem;
+    width: 100%;
+
+}
+ul li ul.dropdown li:hover{
+    color: rgb(205, 251, 0);
+
+
+}
+
+.disabled-container{
+    min-width: 6.5rem;
+}
+
+.disabled{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #575a5e;
+
+
+}
+
+li.search-bar{
+    flex: auto;
+    margin-right: 1.8rem;
+    display: flex;
+    justify-content: flex-end;
+}
+
+li.input[type=text]{
+    vertical-align: top ;
+}
+
+input[type=text]{
+    font-size: 1.5rem; 
+    max-width: 18rem;
+    height:3rem ;
+    border-radius: 5px;
+    border: solid 2px #bcc0c4;
+    margin-right: 0.5rem;
+    font-weight: 500;
+}
+
+input[type=submit]{
+    font-size: 1.5rem; 
+    width: 7rem;
+    background-color: transparent;
+    color: #217d53;
+    border-radius: 5px;
+    border: solid 2px;
+    height:3.4rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+@media(max-width: 769px) {
+    nav{
+        background-color: #212529;
+        height: 5.8rem;
+    }
+    ul{
+        display: none;
+    }
+    .hamburguer-logo{
+        display: block;
+        color: white;
+    }
+    
+}
+
